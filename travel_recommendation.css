@@ -6,6 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
+    font:bold;
+    color: white;
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;

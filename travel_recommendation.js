@@ -10,7 +10,6 @@ function searchRecommendations(){
     fetch('travel_recommendation_api.json')
         .then(response => response.json())
         .then(data => {
-            let data = data.find()
             let country = data.countries.find(item => item.name.toLowerCase().includes(input));
             let city;
             if(!country) {

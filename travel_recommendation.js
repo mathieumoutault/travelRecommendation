@@ -1,3 +1,6 @@
+const searchRecommendationBtn = document.getElementById("searchRecommendations");
+const clearResultBtn = document.getElementById("clearResult");
+
 function searchRecommendations(){
     const input=document.getElementById("searchRecommendation").value.toLowerCase();
     const resultDiv = document.getElementById("recommendationsResult");
@@ -40,3 +43,6 @@ function displayResult(result){
     resultDiv.innerHTML += `<p>${result.name}: ${result.description}</p>`;
     resultDiv.innerHTML += `<img src="${result.imageUrl}" alt="${result.name}">`;
 }
+
+searchRecommendationBtn.addEventListener('click', searchRecommendations);
+clearResultBtn.addEventListener('click',clearResult);
